@@ -1,0 +1,21 @@
+.ui-selectmenu-button.ui-button {
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 0;
+  background-color: #3e3e3e;
+  color: #f0f0f0;
+  border-color: #2b2e33;
+  padding-top: 10px;
+}
+.dropdown-list {
+  display: inline-block;
+
+  &_num {
+    width: 80px;
+  }
+
+  &_text {
+    width: 150px;
+  }
+}

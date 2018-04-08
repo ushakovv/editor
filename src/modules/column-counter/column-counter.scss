@@ -1,0 +1,23 @@
+.column-counter {
+  &__counter {
+    padding: 8px 0;
+    width: 30px;
+    text-align: center;
+    background-color: #3e3e3e;
+    border: none;
+    color: #FFFFFF;
+  }
+
+  &__btn {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    border-left: 1px solid #FFFFFF;
+    outline: none;
+    box-sizing: border-box;
+    margin: 0;
+    cursor: pointer;
+    background-color: #3e3e3e;
+  }
+}

@@ -1,0 +1,100 @@
+.ui-button .ui-icon {
+  display: none;
+}
+
+.line-height {
+  &__btn {
+    cursor: pointer;
+    position: relative;
+    background-color: #8898a3;
+    border-color: #8898a3;
+    color: #000;
+    display: inline-block;
+    margin: 0;
+
+    &:hover, &:active {
+      border: transparent;
+    }
+
+    &_with_icon {
+      text-align: center;
+      vertical-align: top;
+    }
+
+    &_spacing {
+      width: 20px;
+      height: 25px;
+    }
+
+    &_0 {
+      &:after {
+        top: 15px;
+        @include line-height-btn();
+      }
+
+      &:before {
+        top: 19px;
+        @include line-height-btn();
+      }
+    }
+
+    &_1 {
+      &:after {
+        top: 14px;
+        @include line-height-btn();
+      }
+
+      &:before {
+        top: 20px;
+        @include line-height-btn();
+      }
+    }
+
+    &_2 {
+      &:after {
+        top: 13px;
+        @include line-height-btn();
+      }
+
+      &:before {
+        top: 21px;
+        @include line-height-btn();
+      }
+    }
+
+    &_3 {
+      &:after {
+        top: 12px;
+        @include line-height-btn();
+      }
+
+      &:before {
+        top: 22px;
+        @include line-height-btn();
+      }
+    }
+  }
+
+  &__wrapper {
+    display: inline-block;
+    vertical-align: top;
+
+    &:first-of-type {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    &:last-of-type {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+
+  &__input {
+    display: none;
+
+    &:checked + label.line-height__btn {
+      background-color: #3e3e3e;
+    }
+  }
+}

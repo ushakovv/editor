@@ -1,0 +1,73 @@
+//
+// @author Will Steinmetz
+//
+// Materialish theme for the notific8 JavaScript plug-in
+//
+// Copyright (c)2013-2016, Will Steinmetz
+// Licensed under the BSD license.
+// http://opensource.org/licenses/BSD-3-Clause
+//
+
+// mixin
+@mixin notific8_materialish_theme($name, $color, $text-color: #eee) {
+  .#{$notific8-ns}-notification.family-materialish.#{$name},// deprecated
+  .#{$notific8-ns}-notification.materialish.#{$name} {
+    background-color: $color;
+    color: $text-color;
+  }
+}
+
+.#{$notific8-ns}-notification.family-materialish,// deprecated
+.#{$notific8-ns}-notification.materialish {
+  border-radius: 2px;
+  font-size: em(14px);
+  min-height: em(48px);
+  max-width: 568px;
+  min-width: 288px;
+  opacity: 0;
+  transition: all .15s ease-in-out;
+
+  .#{$notific8-ns}-message {
+    margin: 1em em(84px, 14px) 1em em(24px, 14px);
+  }
+
+  &.open {
+    opacity: 1;
+  }
+
+  &.has-heading .#{$notific8-ns}-message {
+    margin-bottom: .25em;
+    margin-top: .25em;
+  }
+
+  .#{$notific8-ns}-close {
+    background-color: transparent;
+    border: none;
+    line-height: em(20px, 14px);
+    margin-top: em(-10px, 14px);
+    right: em(24px, 14px);
+    top: 50%;
+  }
+
+  .#{$notific8-ns}-heading {
+    font-size: em(11px, 14px);
+    font-weight: 100;
+    margin-left: em(24px, 11px);
+    margin-top: em(5px, 11px);
+  }
+
+  &.sticky {
+    .#{$notific8-ns}-message {
+      line-height: em(20px, 14px);
+      margin-right: em(120px, 14px);
+    }
+
+    .#{$notific8-ns}-close.sticky {
+      text-transform: uppercase;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.template {
+  width: calc(100% - 380px);
+  margin-left: 380px;
+  padding-bottom: 100px;
+
+  &__title {
+    border-bottom: 1px solid #d5dadf;
+    background-color: #ecf2f6;
+    height: 60px;
+
+    &_prev {
+      display: none;
+      overflow: hidden;
+      height: auto;
+    }
+
+    .preview &_prev {
+      display: block;
+    }
+  }
+
+  &__show {
+    display: inline-block;
+    border: none;
+    color: #20a0ff;
+    background: 0 0;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-left: 25px;
+    margin-top: 11px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 4px;
+
+    &_back {
+        display: none;
+    }
+
+    .preview &_back {
+      display: inline-block;
+    }
+
+    .preview &_desktop {
+      display: none;
+    }
+  }
+
+
+  &__prev {
+    &_form {
+      display: inline-block;
+      float: right;
+      margin-right: 25px;
+    }
+
+    &_legend {
+      display: inline-block;
+      font-size: 12px;
+      margin-right: 10px;
+    }
+
+    &_input {
+      outline: none;
+      border-radius: 5px;
+      border: transparent;
+      padding: 5px;
+      vertical-align: middle;
+      width: 140px;
+      font-size: 14px;
+    }
+
+    &_btn {
+      padding: 0;
+      vertical-align: middle;
+      margin-left: 10px;
+      border-radius: 5px;
+      background-color: #13ce66;
+    }
+  }
+
+  .preview & {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.device-changer {
+  display: inline-block;
+  margin-left: 15px;
+
+  &__switch {
+    cursor: pointer;
+    width: 50px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 15px;
+    border: transparent;
+    background-color: #bfcbd9;
+  }
+
+  &__btn {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
+    transition: margin .5s;
+
+    &_mobile {
+      margin-left: 35px;
+    }
+  }
+
+  &_icon {
+    font-size: 22px;
+    color: #aaa;
+    line-height: 26px;
+    height: 26px;
+    display: inline-block;
+  }
+}
+
+.preview-template {
+  transition: width .5s;
+  display: none;
+
+  .preview & {
+    display: block;
+  }
+
+  &_mobile {
+    width: 300px;
+    margin: 0 auto;
+  }
+}

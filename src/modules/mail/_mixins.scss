@@ -1,0 +1,10 @@
+@mixin empty-row() {
+  font-family: 'icomoon' !important;
+  content: "\f019";
+  position: absolute;
+  top: 20px;
+  color: #ababab;
+  font-size: 20px;
+  left: 50%;
+  margin-left: -9px;
+}

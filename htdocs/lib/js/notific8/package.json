@@ -1,0 +1,84 @@
+{
+  "_from": "notific8",
+  "_id": "notific8@4.4.1",
+  "_inBundle": false,
+  "_integrity": "sha1-pg5gIieO3DHkmE8T6bHvG6yu8Z0=",
+  "_location": "/notific8",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "notific8",
+    "name": "notific8",
+    "escapedName": "notific8",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/notific8/-/notific8-4.4.1.tgz",
+  "_shasum": "a60e6022278edc31e4984f13e9b1ef1bacaef19d",
+  "_spec": "notific8",
+  "_where": "/Applications/AMPPS/www/mtemplate.lc",
+  "author": {
+    "name": "Will Steinmetz",
+    "email": "willsteinmetz@users.noreply.github.com"
+  },
+  "bugs": {
+    "url": "https://github.com/willsteinmetz/notific8/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Flexible and themeable notification plug-in initially inspired by the notifications introduced in Windows 8.",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.16.0",
+    "grunt": "^0.4.5",
+    "grunt-babel": "^6.0.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^0.11.0",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-uglify": "^0.7.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-karma": "^1.0.0",
+    "grunt-sass": "^1.2.0",
+    "grunt-sass-convert": "^0.3.0",
+    "grunt-scss2less": "0.0.1",
+    "grunt-text-replace": "^0.4.0",
+    "grunt-update-json": "^0.2.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-coverage": "^1.0.0",
+    "karma-htmlfile-reporter": "^0.2.2",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "load-grunt-config": "^0.19.2",
+    "node-static": "^0.7.8",
+    "phantomjs-prebuilt": "^2.1.7",
+    "time-grunt": "^1.4.0"
+  },
+  "homepage": "https://github.com/willsteinmetz/notific8#readme",
+  "keywords": [
+    "javascript",
+    "jquery",
+    "css",
+    "sass",
+    "jquery-plugin"
+  ],
+  "license": "BSD-3-Clause",
+  "main": "dist/notific8.js",
+  "name": "notific8",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/willsteinmetz/notific8.git"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "karma start --single-run"
+  },
+  "version": "4.4.1"
+}

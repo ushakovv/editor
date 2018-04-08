@@ -1,0 +1,36 @@
+.input {
+  &__code, &__img, &__gif {
+    max-width: 100%;
+    width: auto;
+  }
+
+  &__img, &__gif {
+    display: inline-block;
+    transition: all 0.5s;
+  }
+
+  &__code {
+    font-size: 14px;
+    outline: none;
+    border: 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+
+    &:focus {
+      border: 1px solid #000000;
+    }
+  }
+
+  &__button {
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__spacer {
+    visibility: hidden;
+  }
+
+  &__number {
+    width: 50px;
+  }
+}

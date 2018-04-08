@@ -1,0 +1,14 @@
+.social-element {
+  text-align: center;
+  &__item {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,30 @@
+.ui-slider-horizontal {
+  height: 1px;
+  background-color: #8898a3;
+  border: none!important;
+}
+.settings-slider__val {
+  position: absolute;
+  top: -25px;
+  color: red;
+}
+.ui-widget-content .ui-slider-handle {
+  width: 12px;
+  height: 12px;
+  background-color: #20a0ff;
+  border-radius: 50%;
+  transition: transform .4s;
+  user-select: none;
+  border: none;
+  top: -5px;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+
+.settings-slider {
+  margin-top: 15px;
+}

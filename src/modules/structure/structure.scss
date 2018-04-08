@@ -1,0 +1,61 @@
+.structure {
+  cursor: move;
+  width: calc(100% / 2 - 7px);
+  height: 82px;
+  margin-bottom: 10px;
+  border: 1px solid #3b3e43;
+  border-radius: 6px;
+  background-color: #222;
+  text-align: center;
+  float: left;
+  position: relative;
+
+  &:nth-child(odd) {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    background-color: #2f2f2f;
+    border-color: #20a0ff;
+    color: #fff;
+  }
+
+  &__col {
+    height: 70%;
+    border: 1px dotted #fff;
+    border-radius: 10px;
+    margin: 10px auto 0;
+    display: inline-block;
+
+    &_one {
+      width: 85%;
+
+      &_mid {
+        width: 25%;
+        margin-left: 6px;
+        margin-right: 6px;
+      }
+
+      &_big {
+        width: 50%;
+        margin-left: 6px;
+        margin-right: 6px;
+      }
+    }
+
+    &_two {
+      width: calc(75% / 2);
+      margin: 10px 8px 0;
+    }
+
+    &_three {
+      width: calc(65% / 3);
+      margin: 10px 7px 0;
+    }
+
+    &_four {
+      width: calc(65% / 4);
+      margin: 10px 5px 0;
+    }
+  }
+}

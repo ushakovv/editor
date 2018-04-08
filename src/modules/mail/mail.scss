@@ -1,0 +1,170 @@
+.mail {
+  & .ui-draggable-dragging {
+    float: none;
+    opacity: .8;
+
+    &:before {
+      @include empty-row();
+    }
+  }
+
+  .preview & {
+    display: none;
+  }
+
+  & .ui-sortable-placeholder {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background-color: #c5e6f4;
+    visibility: visible!important;
+  }
+
+  &__btn_group {
+    display: none;
+  }
+
+  &__row {
+    padding: 0 100px;
+    position: relative;
+
+    &:hover {
+      outline: 1px solid #2eb4e2;
+    }
+
+    &_active {
+      outline: 1px solid #2eb4e2;
+
+      & .mail__btn_group_row {
+        display: block;
+      }
+    }
+  }
+
+  &__drop {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+
+    &_big {
+      .mail__drop_cell:first-of-type {
+        width: 60%;
+      }
+
+      .mail__drop_cell:last-of-type {
+        width: 36%;
+      }
+    }
+
+    &_mid {
+      .mail__drop_cell:first-of-type {
+        width: 36%;
+      }
+
+      .mail__drop_cell:last-of-type {
+        width: 60%;
+      }
+    }
+  }
+
+  &__drop-area {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+
+    &_2 {
+      width: 48%;
+    }
+
+    &_3 {
+      width: 30%;
+    }
+
+    &_4 {
+      width: 22%;
+    }
+  }
+
+  &__cell {
+    min-height: 60px;
+    outline: 1px dashed #37a1c8;
+    background-color: #c5e6f4;
+    text-align: center;
+    font-size: 14px;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 20px;
+    width: 100%;
+
+    &:before {
+      @include empty-row();
+    }
+
+    &_item {
+      position: relative;
+
+      &_active {
+        outline: 1px solid #2eb2e4;
+
+        & .mail__btn_group {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__cell_hover &__action {
+    bottom: -20px;
+    height: 20px;
+    position: absolute;
+    width: 100%;
+    background-color: #c5e6f4;
+    outline: 1px dashed #37a1c8;
+  }
+
+  &__icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: #000000;
+    border-radius: 50%;
+    padding: 0;
+    box-sizing: content-box;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    z-index: 999;
+
+    &_move {
+      top: calc(50% - 12px);
+      left: -1px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+
+      .mail__cell_item & {
+        border-radius: 50%;
+        left: -10px;
+        top: calc(50% - 9px);
+      }
+    }
+
+    &_copy {
+      top: 0;
+      right: 5px;
+    }
+
+    &_remove {
+      top: 0;
+      right: 35px;
+    }
+
+    .mail__cell_item & {
+      width: 18px;
+      height: 18px;
+    }
+
+    .mail__cell_item & i {
+      font-size: 10px;
+    }
+  }
+}

@@ -1,0 +1,122 @@
+.control {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 380px;
+  background-color: #2b2e33;
+  padding: 0 10px;
+  box-sizing: border-box;
+  z-index: 11;
+
+  &__title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #3b3e43;
+    line-height: 36px;
+    color: #87888c;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  &__menu {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 13px;
+    margin-top: 20px;
+  }
+
+  &__tab {
+    cursor: pointer;
+    font-weight: bold;
+    width: 33.33333%;
+    text-align: center;
+    border-bottom: 3px solid #3b3e43;
+    display: block;
+    float: left;
+    color: #8391a5;
+    padding: 10px 0;
+
+    &_active, &:hover {
+      color: #ffffff;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: #20a0ff;
+    z-index: 1;
+    transition: transform .3s cubic-bezier(.645,.045,.355,1);
+    list-style: none;
+    width: 33.33333%;
+  }
+
+  &__page {
+    color: #9a9a9a;
+    font-size: 13px;
+    display: none;
+
+    &_active {
+      display: block;
+    }
+  }
+
+  &__block {
+    position: relative;
+
+    &_inline & {
+      display: inline-block;
+      width: 45%;
+    }
+
+    &_inline .colorpicker-btn {
+      top: 34px;
+    }
+  }
+
+  &__header {
+    color: #f9f9f9;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  &__legend {
+    margin-bottom: 5px;
+  }
+
+  &__input {
+    outline: none;
+    width: 108px;
+    border: 0;
+    background-color: #3e3e3e;
+    color: #f0f0f0;
+    margin-bottom: 5px;
+    font-size: 12px;
+    border-radius: 4px;
+    height: 31px;
+    line-height: 1;
+    padding: 3px 10px 3px 45px;
+    transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+    background-image: none;
+    box-sizing: border-box;
+
+    &_text {
+      width: 32px;
+      padding: 0;
+    }
+
+    &_hidden {
+      visibility: hidden;
+    }
+  }
+
+  .preview & {
+    display: none;
+  }
+}
